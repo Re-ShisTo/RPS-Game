@@ -4,6 +4,8 @@ let choices = document.querySelectorAll(".RPS");
 let result = document.querySelector(".result");
 let userScore = document.querySelector("#user-score");
 let AIScore = document.querySelector("#AI-score");
+let msg = document.querySelector("#You");
+let aimsg = document.querySelector("#AI");
 
 const AIMind = () =>{
     const options = ["Rock", "Paper", "Scissors"];
@@ -15,6 +17,8 @@ const gameMind = (userChoice) =>{
     console.log("User choice is", userChoice);
     const AIChoice = AIMind();
     console.log("AI Choice is", AIChoice);
+    msg.innerText = ` You Chose ${userChoice}`;
+    aimsg.innerText = ` AI Chose ${AIChoice}`;
 
     if(userChoice === AIChoice){
         console.log("Draw");
