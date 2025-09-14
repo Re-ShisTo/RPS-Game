@@ -17,8 +17,8 @@ const gameMind = (userChoice) =>{
     console.log("User choice is", userChoice);
     const AIChoice = AIMind();
     console.log("AI Choice is", AIChoice);
-    msg.innerText = ` You Chose ${userChoice}`;
-    aimsg.innerText = ` AI Chose ${AIChoice}`;
+    msg.innerText = `You Chose ${userChoice}`;
+    aimsg.innerText = `AI Chose ${AIChoice}`;
 
     if(userChoice === AIChoice){
         console.log("Draw");
